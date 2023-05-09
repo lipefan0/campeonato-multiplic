@@ -1,113 +1,108 @@
-import Image from 'next/image'
+"use client";
+
+import Form from "./components/Form/page";
+import Image from "next/image";
+import fb from "../../public/assets/fb-icon.png";
+import insta from "../../public/assets/inta-icon.png";
+import linkedin from "../../public/assets/linkedin-icon.png";
+import twitter from "../../public/assets/twitter-icon.png";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+    <main className="bg-indigo-900">
+      <section className="bg-[url('/assets/camp-fifa.png')] bg-no-repeat	bg-center bg-cover h-screen flex justify-center items-center">
+        <div className="w-6/12 mx-auto flex items-center justify-center flex-col">
+          <h1 className="text-7xl text-gray-100 py-6 text-center">
+            Vem jogar com a gente
+          </h1>
+          <a href="" className="py-4 px-8 bg-indigo-500 rounded text-gray-100">
+            Cadastrar
           </a>
         </div>
-      </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className="bg-gray-200">
+        <div className="w-7/12 flex items-center justify-center mx-auto">
+          <h3 className="text-4xl text-center text-gray-900 p-6">
+            A Multiplic inicia o primeiro campeonato de games da região!
+          </h3>
+        </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <div className="flex items-center justify-evenly md:flex-row flex-col">
+          <div className="bg-white md:w-3/12 w-6/12 p-8 rounded mb-4">
+            <img
+              src="https://img.freepik.com/fotos-gratis/amigos-de-vista-lateral-ganhando-videogame_23-2149349984.jpg?w=1060&t=st=1683574967~exp=1683575567~hmac=870b59e060839f16799e7c019c68db2810479a33602e37b1d4e2956ed478dc16"
+              alt=""
+              className="shadow-lg w-auto"
+            />
+            <p className="text-gray-800 text-lg mt-4">
+              Você está convidado a participar desse show
+            </p>
+          </div>
+          <div className="bg-white md:w-3/12 w-6/12 p-8 rounded mb-4 shadow-2xl">
+            <img
+              src="https://img.freepik.com/fotos-gratis/relaxe-casual-homem-adulto-asiatico-usando-fone-de-ouvido-de-realidade-virtual-e-segurando-controladores-joga-em-um-videogame-esportivo-em-casa-jogando-um-jogo-de-esporte-ativo-vr-on-line-na-sala-de-estar_609648-2566.jpg?w=1060&t=st=1683574615~exp=1683575215~hmac=a4146e4e4cd0a861a89731b26a99abcfb83ae04776bee2178ad6ee40c2ff4abd"
+              alt=""
+              className="shadow-lg w-auto"
+            />
+            <p className="text-gray-800 text-lg mt-4">
+              Mostrar suas habilidades no game.
+            </p>
+          </div>
+          <div className="bg-white md:w-3/12 w-6/12 p-8 rounded mb-4">
+            <img
+              src="https://img.freepik.com/fotos-gratis/controladores-de-alto-angulo-e-fones-de-ouvido_23-2149829136.jpg?w=1060&t=st=1683575072~exp=1683575672~hmac=6298b720fe79c134909c283e1ff4d102b1a909831ca2668a16456c423cc31c40"
+              alt=""
+              className="shadow-lg w-auto"
+            />
+            <p className="text-gray-800 text-lg mt-4">
+              E ganhar vários prêmios!
+            </p>
+          </div>
+        </div>
+      </section>
+      <Form />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <footer className="flex w-full items-center justify-center my-10">
+        <ul className="flex justify-around items-center w-1/3">
+          <li>
+            <a
+              href="https://www.facebook.com/multiplictelecom"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image width={32} height={32} alt="" src={fb} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/multiplictelecom/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image width={32} height={32} alt="" src={insta} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/multiplictelecom/mycompany/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image width={32} height={32} alt="" src={linkedin} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/Multiplicnet"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image width={32} height={32} alt="" src={twitter} />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </main>
-  )
+  );
 }
