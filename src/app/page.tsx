@@ -16,7 +16,7 @@ export default function Home() {
           <h1 className="text-7xl text-gray-100 py-6 text-center">
             Vem jogar com a gente
           </h1>
-          <a href="" className="py-4 px-8 bg-indigo-500 rounded text-gray-100">
+          <a href="#form" className="py-4 px-8 bg-indigo-500 rounded text-gray-100">
             Cadastrar
           </a>
         </div>

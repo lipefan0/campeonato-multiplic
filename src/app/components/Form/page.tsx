@@ -46,7 +46,7 @@ export default function Form() {
         <strong className="text-2xl text-blue-500">Cadastre agora!</strong>
       </div>
 
-      <form className="space-y-6" action="" onSubmit={handleSubmit}>
+      <form id="form" className="space-y-6" action="" onSubmit={handleSubmit}>
         <div className="">
           <label
             className="block text-sm font-medium leading-6 text-gray-100"
