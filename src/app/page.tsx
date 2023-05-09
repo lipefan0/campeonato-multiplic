@@ -1,5 +1,3 @@
-"use client";
-
 import Form from "./components/Form/page";
 import Image from "next/image";
 import fb from "../../public/assets/fb-icon.png";
@@ -30,30 +28,30 @@ export default function Home() {
 
         <div className="flex items-center justify-evenly md:flex-row flex-col">
           <div className="bg-white md:w-3/12 w-6/12 p-8 rounded mb-4">
-            <img
-              src="https://img.freepik.com/fotos-gratis/amigos-de-vista-lateral-ganhando-videogame_23-2149349984.jpg?w=1060&t=st=1683574967~exp=1683575567~hmac=870b59e060839f16799e7c019c68db2810479a33602e37b1d4e2956ed478dc16"
-              alt=""
+            <Image
               className="shadow-lg w-auto"
+              alt=""
+              src="https://img.freepik.com/fotos-gratis/amigos-de-vista-lateral-ganhando-videogame_23-2149349984.jpg?w=1060&t=st=1683574967~exp=1683575567~hmac=870b59e060839f16799e7c019c68db2810479a33602e37b1d4e2956ed478dc16"
             />
             <p className="text-gray-800 text-lg mt-4">
               Você está convidado a participar desse show
             </p>
           </div>
           <div className="bg-white md:w-3/12 w-6/12 p-8 rounded mb-4 shadow-2xl">
-            <img
-              src="https://img.freepik.com/fotos-gratis/relaxe-casual-homem-adulto-asiatico-usando-fone-de-ouvido-de-realidade-virtual-e-segurando-controladores-joga-em-um-videogame-esportivo-em-casa-jogando-um-jogo-de-esporte-ativo-vr-on-line-na-sala-de-estar_609648-2566.jpg?w=1060&t=st=1683574615~exp=1683575215~hmac=a4146e4e4cd0a861a89731b26a99abcfb83ae04776bee2178ad6ee40c2ff4abd"
-              alt=""
+            <Image
               className="shadow-lg w-auto"
+              alt=""
+              src="https://img.freepik.com/fotos-gratis/relaxe-casual-homem-adulto-asiatico-usando-fone-de-ouvido-de-realidade-virtual-e-segurando-controladores-joga-em-um-videogame-esportivo-em-casa-jogando-um-jogo-de-esporte-ativo-vr-on-line-na-sala-de-estar_609648-2566.jpg?w=1060&t=st=1683574615~exp=1683575215~hmac=a4146e4e4cd0a861a89731b26a99abcfb83ae04776bee2178ad6ee40c2ff4abd"
             />
             <p className="text-gray-800 text-lg mt-4">
               Mostrar suas habilidades no game.
             </p>
           </div>
           <div className="bg-white md:w-3/12 w-6/12 p-8 rounded mb-4">
-            <img
-              src="https://img.freepik.com/fotos-gratis/controladores-de-alto-angulo-e-fones-de-ouvido_23-2149829136.jpg?w=1060&t=st=1683575072~exp=1683575672~hmac=6298b720fe79c134909c283e1ff4d102b1a909831ca2668a16456c423cc31c40"
-              alt=""
+            <Image
               className="shadow-lg w-auto"
+              alt=""
+              src="https://img.freepik.com/fotos-gratis/controladores-de-alto-angulo-e-fones-de-ouvido_23-2149829136.jpg?w=1060&t=st=1683575072~exp=1683575672~hmac=6298b720fe79c134909c283e1ff4d102b1a909831ca2668a16456c423cc31c40"
             />
             <p className="text-gray-800 text-lg mt-4">
               E ganhar vários prêmios!
