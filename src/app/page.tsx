@@ -4,6 +4,9 @@ import fb from "../../public/assets/fb-icon.png";
 import insta from "../../public/assets/inta-icon.png";
 import linkedin from "../../public/assets/linkedin-icon.png";
 import twitter from "../../public/assets/twitter-icon.png";
+import jovemJogador from "../../public/assets/jovem-jogando.jpg";
+import Win from "../../public/assets/win.jpg";
+import Vencedor from "../../public/assets/vencedor.jpg";
 
 export default function Home() {
   return (
@@ -21,28 +24,43 @@ export default function Home() {
 
       <section className="bg-gray-200">
         <div className="w-7/12 flex items-center justify-center mx-auto">
-          <h3 className="text-4xl text-center text-gray-900 p-6">
+          <h3 className="sm:text-4xl text-xl text-center text-gray-900 p-6">
             A Multiplic inicia o primeiro campeonato de games da região!
           </h3>
         </div>
 
         <div className="flex items-center justify-evenly md:flex-row flex-col">
-          <div className="bg-white md:w-3/12 w-6/12 p-8 rounded mb-4">
-            <Image className="shadow-lg w-auto" alt="" src="" />
-            <p className="text-gray-800 text-lg mt-4">
-              Você está convidado a participar desse show
+          <div className="bg-white md:w-3/12 w-8/12 pb-5 rounded-t-xl mb-4 shadow-2xl hover:scale-105 hover:transition-all ease-in duration-200">
+            <Image
+              className="shadow-md w-auto rounded-t-xl "
+              alt=""
+              src={jovemJogador}
+            />
+            <p className="text-gray-800 text-lg mt-4 px-1">
+              Quer mostrar suas habilidades e se consagrar o grande campeão.
+              Seja um veterano ou esteja começando agora, todos são bem-vindos!
             </p>
           </div>
-          <div className="bg-white md:w-3/12 w-6/12 p-8 rounded mb-4 shadow-2xl">
-            <Image className="shadow-lg w-auto" alt="" src="" />
-            <p className="text-gray-800 text-lg mt-4">
-              Mostrar suas habilidades no game.
+          <div className="bg-white md:w-3/12 w-8/12 pb-5 rounded-t-xl mb-4 shadow-2xl hover:scale-105 hover:transition-all ease-in duration-200">
+            <Image
+              className="shadow-md w-auto rounded-t-xl "
+              alt=""
+              src={Win}
+            />
+            <p className="text-gray-800 text-lg mt-4 px-1">
+              Prepare-se para uma experiência eletrizante, onde os melhores
+              jogadores se enfrentarão em uma competição de tirar o fôlego!
             </p>
           </div>
-          <div className="bg-white md:w-3/12 w-6/12 p-8 rounded mb-4">
-            <Image className="shadow-lg w-auto" alt="" src="  " />
-            <p className="text-gray-800 text-lg mt-4">
-              E ganhar vários prêmios!
+          <div className="bg-white md:w-3/12 w-8/12 pb-5 rounded-t-xl mb-4 shadow-2xl hover:scale-105 hover:transition-all ease-in duration-200">
+            <Image
+              className="shadow-md w-auto rounded-t-xl "
+              alt=""
+              src={Vencedor}
+            />
+            <p className="text-gray-800 text-lg mt-4 px-1">
+              Além da honra e do prestígio de se tornar o grande campeão, também
+              haverá recompensas incríveis, incluindo prêmios em dinheiro!
             </p>
           </div>
         </div>
